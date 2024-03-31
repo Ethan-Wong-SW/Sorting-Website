@@ -131,7 +131,7 @@ The above steps will install Flask and Transcrypt Python libraries and some othe
 
 To activate the virtualenv, run
 ```shell
-pipenv shell
+pipenv shell OR python -m pipenv shell
 ```
 
 Alternatively, you can choose everytime you run a command to prepend that command with the following:
