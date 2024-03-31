@@ -273,13 +273,13 @@ Javascript is the commonly used language for front-end web development. However,
 
 Windows:
 ```dos
-> cd %USERPROFILE\Downloads\sorting\app\static
+> cd %USERPROFILE\Sorting-Website\sorting\app\static
 > dir
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/d2w_mini_projects/sorting/app/static
+$ cd ~/Downloads/Sorting-Website/sorting/app/static
 $ ls
 ```
 
@@ -338,12 +338,12 @@ which means go up the folder two times. Or, simply
 
 Windows:
 ```dos
-> cd %USERPROFILE\Downloads\sorting
+> cd %USERPROFILE\Downloads\Sorting-Website\sorting
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/sorting/
+$ cd ~/Downloads/Sorting-Website/sorting/
 ```
 
 
