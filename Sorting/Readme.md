@@ -52,13 +52,13 @@ Once you have downloaded the repository, you can go to the folder called `sortin
 
 Windows:
 ```dos
-cd d2w_mini_projects\sorting
+cd Sorting-Website\sorting
 dir
 ```
 
 Unix/MacOS
 ```shell
-cd d2w_mini_projects/sorting
+cd Sorting-Website/sorting
 ls
 ```
 
@@ -90,12 +90,12 @@ Go to the root folder `mp_sort`.
 
 Windows:
 ```dos
-> cd %USERPROFILE%\Downloads\sorting
+> cd %USERPROFILE%\Downloads\Sorting-Website\sorting
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/sorting
+$ cd ~/Downloads/Sorting-Website/sorting
 ```
 
 First make sure that you have installed `pipenv` package.
