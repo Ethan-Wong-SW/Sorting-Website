@@ -27,7 +27,7 @@ def generate():
 	# under div section with the id called "generate"	
 	document.getElementById("generate").innerHTML = array_str
 
-def insertion_sort(array):
+def bubble_sort(array):
 	n = len(array)
 	swapped = True
 	while swapped:
@@ -46,7 +46,7 @@ def sortnumber1():
 	my_string = my_string.replace('.', "")
 	my_string = my_string.split(', ')
 	list_of_int = [float(i) for i in my_string]
-	insertion_sort(list_of_int)
+	bubble_sort(list_of_int)
 	my_new_string = (', '.join(map(str, list_of_int)) + '.')
 
 	'''	This function is used in Exercise 1.
@@ -83,7 +83,7 @@ def sortnumber2():
 		return
 	new_value = value.split(',')
 	new_list = [eval(i) for i in new_value]
-	insertion_sort(new_list)
+	bubble_sort(new_list)
 	my_new_str = (', '.join(map(str, new_list)) + '.')
 	pass
 	
