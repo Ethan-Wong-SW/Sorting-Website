@@ -52,7 +52,7 @@ def sortnumber1():
 	'''	This function is used in Exercise 1.
 		The function is called when the sort button is clicked.
 
-		You need to do the following:
+		Purpose of Function:
 		- get the list of numbers from the "generate" HTML id, use document.getElementById(id).innerHTML
 		- create a list of integers from the string of numbers
 		- call your sort function, either bubble sort or insertion sort
@@ -68,10 +68,9 @@ def sortnumber2():
 	'''	This function is used in Exercise 2.
 		The function is called when the sort button is clicked.
 
-		You need to do the following:
+		Purpose of Function:
 		- Get the numbers from a string variable "value".
-		- Split the string using comma as the separator and convert them to 
-			a list of numbers
+		- Split the string using comma as the separator and convert them to a list of numbers
 		- call your sort function, either bubble sort or insertion sort
 		- create a string of the sorted numbers and store it in array_str
 	'''
@@ -86,10 +85,9 @@ def sortnumber2():
 	new_list = [eval(i) for i in new_value]
 	insertion_sort(new_list)
 	my_new_str = (', '.join(map(str, new_list)) + '.')
-	# Your code should start from here
-	# store the final string to the variable array_str
 	pass
-
+	
+	# store the final string to the variable array_str
 	array_str = my_new_str
 
 	document.getElementById("sorted").innerHTML = array_str
