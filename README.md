@@ -64,10 +64,13 @@ ls
 
 The last command should output the following:
 
-```shell
-Readme.md		
+```shell		
 application.py
+DeployEB.md
 Pipfile
+Pipfile.lock
+requirements.txt
+runflaskvoc.sh
 app
 ```
 
