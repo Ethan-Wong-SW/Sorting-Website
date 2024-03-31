@@ -1,14 +1,13 @@
-# Mini Project 1: Sorting App
+Sorting Website
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [Mini Project 1: Sorting App](#mini-project-1-sorting-app)
+- [Sorting Website](#sorting-website)
     - [Learning Objectives](#learning-objectives)
     - [Setup](#setup)
         - [Install Git](#install-git)
         - [Downloading Repository](#downloading-repository)
-        - [Go to Mini Project 1 Folder](#go-to-mini-project-1-folder)
         - [Create Virtual Environment](#create-virtual-environment)
     - [Brief Overview of Flask Project Structure](#brief-overview-of-flask-project-structure)
         - [HTML for Exercise 1](#html-for-exercise-1)
@@ -40,26 +39,26 @@ You need to have Git to do the project. Download and install the software accord
 - Mac OS: [Git for MacOS](https://git-scm.com/download/mac)
 
 ### Downloading Repository
-Clone the mini project repository from Github. On your terminal or Git Bash, type the following:
+Clone this repository from Github. On your terminal or Git Bash, type the following:
 
 ```shell
 cd Downloads
-git clone https://github.com/Data-Driven-World/d2w_mini_projects
+git clone https://github.com/ArnoKenway/Sorting-Website.git
 ```
 
-### Go to Mini Project 1 Folder
+### Go to sorting folder
 
-Once you have downloaded the repository, you can go to the repository and to the folder called `mp_sort` for this mini project.
+Once you have downloaded the repository, you can go to the folder called `sorting` for this project.
 
 Windows:
 ```dos
-cd d2w_mini_projects\mp_sort
+cd d2w_mini_projects\sorting
 dir
 ```
 
 Unix/MacOS
 ```shell
-cd d2w_mini_projects/mp_sort
+cd d2w_mini_projects/sorting
 ls
 ```
 
@@ -91,12 +90,12 @@ Go to the root folder `mp_sort`.
 
 Windows:
 ```dos
-> cd %USERPROFILE%\Downloads\d2w_mini_projects\mp_sort
+> cd %USERPROFILE%\Downloads\sorting
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/d2w_mini_projects/mp_sort
+$ cd ~/Downloads/sorting
 ```
 
 First make sure that you have installed `pipenv` package.
@@ -120,7 +119,7 @@ It is basically saying that you need to add the newly installed `pipenv` program
 export PATH='/voc/work/.local/bin':$PATH
 ```
 
-We will call `mp_sort` folder as the **root** folder of our application. 
+We will call `sorting` folder as the **root** folder of our application. 
 
 From the root folder, install the packages specified in the `Pipfile`.
 ```shell
@@ -145,15 +144,15 @@ Ok, so let's enter into the shell by typing:
 pipenv shell
 ```
 
-You should see the word `(mp_sort)` in your prompt something like:
+You should see the word `(sorting)` in your prompt something like:
 
 Windows:
 ```dos
-(mp_sort) folder >
+(sorting) folder >
 ```
 Unix/MacOS:
 ```shell
-(mp_sort) user $
+(sorting) user $
 ```
 
 _To exit the virtual environment at the end of this mini project, simply type:_
@@ -178,7 +177,7 @@ if __name__ == "__main__":
 The last two lines runs the `application` object when it is run on the shell. The value will be used when you deploy it to Amazon Elastic Beanstalk. It also enables the debug mode to `True` so that you can see any error messages when they occur. The `application` object is imported in the first line from the `app` package. The `app` package is in a folder called `app`:
 
 ```shell
-mp_sort/
+sorting/
   app/
     __init__.py
     routes.py
@@ -219,7 +218,7 @@ def exercise2():
 The first route indicates when a user enter the URL with "/" or "/index" at the end, our web app will serve this request by calling `index()` function. The `index()` function will return a HTML response following a template called `index.html`. This file `index.html` can be found inside the `templates` folder.
 
 ```shell
-mp_sort/
+sorting/
   app/
     __init__.py
     routes.py
@@ -258,7 +257,7 @@ In this code, the variable `title` is set to `Mini Project 1 Exercise 1`.
 The second tag `<script ...>...</script>` is to import our script. We will generate this Javascript file `library.js` from our Python `library.py` file inside the `static` folder. 
 
 ```shell
-mp_sort/
+sorting/
   app/
     __init__.py
     routes.py
@@ -274,13 +273,13 @@ Javascript is the commonly used language for front-end web development. However,
 
 Windows:
 ```dos
-> cd %USERPROFILE\Downloads\d2w_mini_projects\mp_sort\app\static
+> cd %USERPROFILE\Downloads\sorting\app\static
 > dir
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/d2w_mini_projects/mp_sort/app/static
+$ cd ~/Downloads/d2w_mini_projects/sorting/app/static
 $ ls
 ```
 
@@ -339,12 +338,12 @@ which means go up the folder two times. Or, simply
 
 Windows:
 ```dos
-> cd %USERPROFILE\Downloads\d2w_mini_projects\mp_sort
+> cd %USERPROFILE\Downloads\sorting
 ```
 
 Unix/MacOS:
 ```shell
-$ cd ~/Downloads/d2w_mini_projects/mp_sort/
+$ cd ~/Downloads/sorting/
 ```
 
 
@@ -371,75 +370,4 @@ To stop the web app, type `CTRL+C`.
 If you are doing your mini project in Vocareum, you can do a CTRL-click (Windows) or CMD-click on the `http://127.0.0.1:5000` link in the terminal and it will open a new tab in your browser. 
 
 To stop the web app, type `CTRL+C`.
-
-## Task 1: Generating Random Integers 
-
-We will start with Exercise 1.  Open `ex1.html` in your text editor. You should see these few lines of code:
-
-```html
-<p>
-	<div id="generate">...</div>
-	<button onclick="library.generate()">Generate 10 numbers</button>
-</p>
-```
-
-We have two buttons. The first button is to generate 10 random numbers. The event `onclick` is binded to the function `generate()` in your `library.py`. Fill in this function to do the following:
-- generate 10 random integers and store it into the global variable `array`,
-- create a single string containing all the numbers. For example,
-    `3, 1, 2, 4, 8, 6, 5, 9, 0, 7.`
-
-## Task 2: Sorting Numbers
-
-In `ex1.html`, you should also find the following lines:
-```html
-<p>
-	<div id="sorted">...</div>
-	<button onclick="library.sortnumber1()">Sort</button>
-</p>
-```
-
-The second button is to sort the generated random numbers. The event `onclick` is binded to the function `sortnumber1()` in your `library.py`. Fill in this function to do the following:
-- get the random numbers from `generate` HTML id. *Hint: use `document.getElementById(id).innerHTML`* to get the numbers,
-- remove the other characters and create a list of integers called `sortedarray`,
-- sort the list using either bubble sort or insertion sort,
-- create a single string containing the sorted numbers.
-
-## Task 3: Creating a Text Input
-
-Now, let's move on to Exercise 2. In this exercise, instead of randomly generate the numbers, you will ask the user to enter the sequence of numbers using a Text Input.
-
-Open `ex2.html`. You should see the following:
-
-```html
-<p>
-	<div id="generate">Enter a sequence of numbers separated by a comma (","):</div>
-	## Enter the code here to create a Text Input. ##
-</p>
-```
-
-Search the internet to find out how to create a Text Input field and enter the code in the line indicated. Replace that line with the correct tag and code for Text Input. Name the text input `numbers`. *You may want to also specify some default values to appear in the text input*.
-
-## Task 4: Sorting User Input
-
-You should also see the following line:
-
-```html
-<p>
-	<div id="sorted">...</div>
-	<button onclick="library.sortnumber2()">Sort</button>
-</p>
-```
-
-This button's even `onclick` is binded to `sortnumber2()` function in your `library.py`. Modify that function to do the following:
-- get the string from the text input stored in the variable `value`,
-- split the string using comma as a separator,
-- remove all trailing whitespaces and convert them to numbers,
-- sort the list of numbers,
-- create a single string containing the sorted numbers and store it to `array_str`.
-
-## Expected Output
-
-The expected output for both exercises 1 and 2 can be found in this video.
-
-[Mini Project 1 Expected Output](https://web.microsoftstream.com/video/fa203d50-c064-48a2-a951-ec0ec3385a48)
 
