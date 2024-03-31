@@ -4,7 +4,7 @@
 **Table of Contents**
 
 - [Sorting Website](#sorting-website)
-    - [Learning Objectives](#learning-objectives)
+    - [Objectives](#objectives)
     - [Setup](#setup)
         - [Install Git](#install-git)
         - [Downloading Repository](#downloading-repository)
@@ -24,8 +24,8 @@
 <!-- markdown-toc end -->
 
 
-## Learning Objectives
-In this mini project, you will develop a web app to sort numbers. By the end of this assignment, you should be able to:
+## Objectives
+In this mini project, a web app will be developed to sort numbers. This project should:
 - Create a simple web app using Flask web framework
 - Use Transcrypt Python library to create front-end web script with Python
 - Run a localhost web server 
