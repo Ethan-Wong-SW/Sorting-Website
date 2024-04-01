@@ -23,7 +23,7 @@ export var generate = function () {
 	var array_str = my_string;
 	document.getElementById ('generate').innerHTML = array_str;
 };
-export var insertion_sort = function (array) {
+export var bubble_sort = function (array) {
 	var n = len (array);
 	var swapped = true;
 	while (swapped) {
@@ -53,7 +53,7 @@ export var sortnumber1 = function () {
 		}
 		return __accu0__;
 	}) ();
-	insertion_sort (list_of_int);
+	bubble_sort (list_of_int);
 	var my_new_string = ', '.join (map (str, list_of_int)) + '.';
 	// pass;
 	var array_str = my_new_string;
@@ -73,7 +73,7 @@ export var sortnumber2 = function () {
 		}
 		return __accu0__;
 	}) ();
-	insertion_sort (new_list);
+	bubble_sort (new_list);
 	var my_new_str = ', '.join (map (str, new_list)) + '.';
 	// pass;
 	var array_str = my_new_str;
